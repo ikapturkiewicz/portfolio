@@ -1,0 +1,182 @@
+{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.green {
+    color: #1ac056;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 30px;
+
+}
+
+.clear {
+    clear: both;
+}
+
+/*NAWIGACJA*/
+
+#menu {
+    background-color: #F9FCFE;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+
+}
+
+#menu ul .menu-item {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 60px;
+
+}
+
+#menu ul .menu-item a {
+    text-decoration: none;
+    color: #1ac056;
+
+}
+
+.menu-item a:hover {
+    color: firebrick;
+}
+
+/*TYTUŁ*/
+
+#header {
+    position: relative;
+    text-align: center;
+}
+
+#img {
+    background-image: url(../img/header-background.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 50px;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-transform: capitalize;
+    text-align: center;
+    color: #FFF;
+    transform: translateY(-50%);
+}
+
+.header h1 {
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.header h2 {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+/*O MNIE*/
+
+#about {
+    overflow: hidden;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#container {
+    text-align: center;
+}
+
+.about-inner {
+    float: left;
+    width: 50%;
+    margin: 0;
+    display: inline-block;
+}
+
+.about-inner img {
+    width: 50%;
+
+}
+
+.about-inner p {
+    margin: 60px;
+    text-align: left;
+}
+
+/*UMIEJĘTNOŚCI*/
+
+#skills {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.icons {
+    display: inline-block;
+    align-items: center;
+}
+
+/*PORTFOLIO*/
+
+#portfolio {
+    text-align: center;
+    padding: 0 20px;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.foto {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    align-items: center;
+}
+
+.background1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+.background2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+.background3 {
+    background-image: url(../img/portfolio4.jpg);
+}
+
+.mask {
+    color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    padding: 10px;
+}
+
+.border {
+    height: 100%;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+}
