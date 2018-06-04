@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css"> 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Roboto:100,400&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
@@ -12,6 +15,8 @@
 <body>
     <!--NAWIGACJA-->
     <nav id="menu">
+        <label for="respons" id="mobile-menu">Menu</label>
+        <input type="checkbox" id="respons">
         <ul>
             <li class="menu-item"><a href="#about">o mnie</a></li>
             <li class="menu-item"><a href="#skills">umiejętności</a></li>
@@ -22,7 +27,7 @@
     <!--TYTUŁ-->
     <header id="img">
         <div class="header">
-            <h1 id="main-header-text">Iwona <span class="green">Kapturkiewicz</span></h1>
+            <h1 id="main-header-text">Iwo<span class="green">Kapturkiewicz</span></h1>
             <h2>Front-end developer</h2>
         </div>
     </header>
@@ -63,44 +68,76 @@
     <section id="portfolio">
 
         <h2>Moje <span class="green">portfolio</span></h2>
-        <div class="foto" class="background1">
-         <div class="mask">
-                <div class="border">
-                    <div class="content">
-                        <h3>numer 1</h3>
-                        <p>{Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem maxime quae exercitationem, id veniam, esse error officia delectus enim debitis ea asperiores itaque aspernatur fuga eos natus atque officiis cumque!}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="foto" class="background2">
-         <div class="mask">
-                <div class="border">
-                    <div class="content">
-                        <h3>numer 2</h3>
-                        <p>{Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vitae distinctio debitis, excepturi dolores consequuntur non quaerat fugiat quae dolor optio molestiae qui nihil officia tenetur autem, explicabo eum eius!}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="foto" class="background3">
+        <div class="foto background1">
             <div class="mask">
                 <div class="border">
                     <div class="content">
-                        <h3>numer 3</h3>
-                        <p>{Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab obcaecati aliquid dolores non molestiae cum ipsa totam soluta culpa ad. Vero laboriosam laudantium est et fugiat suscipit, dolores, accusantium natus!}</p>
+                        <h3>Lorem ipsum</h3>
+                        <p>Opis projektu lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem maxime quae exercitationem, id veniam, esse error officia delectus enim debitis ea asperiores itaque aspernatur fuga eos natus atque officiis cumque.</p>
+                        <h4>Wykorzystane technologie:</h4>
+                        <p>HTML5, CSS, RWD, Bootstrap, JavaScript, JQuery</p> <i class="fa fa-link"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foto background2">
+            <div class="mask">
+                <div class="border">
+                    <div class="content">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vitae distinctio debitis, excepturi dolores consequuntur non quaerat fugiat quae dolor optio molestiae qui nihil officia tenetur autem, explicabo eum eius!</p>
+                        <h4>Wykorzystane technologie:</h4> <i class="fa fa-link"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foto background3">
+            <div class="mask">
+                <div class="border">
+                    <div class="content">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab obcaecati aliquid dolores non molestiae cum ipsa totam soluta culpa ad. Vero laboriosam laudantium est et fugiat suscipit, dolores, accusantium natus!</p>
+                        <h4>Wykorzystane technologie:</h4> <i class="fa fa-link"></i>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="clear"></div>
+
     </section>
     <!--KONTAKT-->
-    <section>
-        <h2 id="contact">
-
-        </h2>
+    <section id="contact">
+        <!--adres-->
+        <div class="info">
+            <h2>Iwo <span class="green">Kapturkiewicz</span></h2><br>
+            <address>ul. Czarnowiejska 1/2<br>
+            31-126 Kraków<br><br>
+            tel: 739 09 22 34<br>
+            email: <span href="" class="green">iwona.kapturkiewicz@gmail.com</span>
+            </address>
+            <!--ikony-->
+            <a class="socmed"><i href="" target="_blank" class="fa fa-facebook fa-2x "aria-hidden="true"></i></a>
+            <a class="socmed"><i href="" target="_blank" class="fa fa-google-plus fa-2x "aria-hidden="true"></i></a>
+            <a class="socmed"><i href="" target="_blank" class="fa fa-twitter fa-2x "aria-hidden="true"></i></a>
+            <a class="socmed"><i href="" target="_blank" class="fa fa-linkedin fa-2x "aria-hidden="true"></i></a>
+        </div>
+        <!--formularz-->
+        <form class="form" action="https://formspree.io/iwona.kapturkiewicz@gmail.com" method="POST">
+            <label for="name"></label>
+            <input type="text" name="name surname" placeholder="Imię i nazwisko">
+            <label for="email"></label>
+            <input type="text" name="email" placeholder="E-mail">
+            <label for="msg"></label>
+            <textarea name="msg" id="" cols="30" rows="10" placeholder="Treść wiadomości"></textarea>
+            <input type="submit" value="Wyślij">
+        </form>
+        <div class="clear"></div>
     </section>
+    <!--FOOTER-->
+    <footer id="copyright">
+        <p>Copyright © Iwona Kapturkiewicz</p>
+    </footer>
 </body>
 
 </html>

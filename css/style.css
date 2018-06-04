@@ -1,4 +1,4 @@
-{
+* {
     box-sizing: border-box;
 }
 
@@ -8,7 +8,7 @@ body {
 }
 
 .green {
-    color: #1ac056;
+    color: #1AC056;
     font-weight: 400;
 }
 
@@ -49,7 +49,7 @@ h2 {
 
 #menu ul .menu-item a {
     text-decoration: none;
-    color: #1ac056;
+    color: #1AC056;
 
 }
 
@@ -138,20 +138,19 @@ h2 {
 
 #portfolio {
     text-align: center;
-    padding: 0 20px;
-    top: 50%;
-    transform: translateY(50%);
+    padding: 0 70px;
+    font-weight: 100;
 }
 
 .foto {
-    width: 100px;
-    height: 100px;
+    height: 350px;
+    width: 33.333%;
     float: left;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
-    align-items: center;
+    color: #FFF;
 }
 
 .background1 {
@@ -167,16 +166,122 @@ h2 {
 }
 
 .mask {
-    color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 100%;
     padding: 10px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.mask:hover {
+    opacity: 1;
 }
 
 .border {
     height: 100%;
     position: relative;
+    border: 2px solid #FFF;
 }
 
 .content {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*FORMULARZ KONTAKT*/
+
+h2 {
+    font-weight: 200;
+}
+
+#contact {
+    background-color: #213B50;
+    color: #FFF;
+    margin-top: 60px;
+    padding: 40px;
+    font-weight: 300;
+    
+}
+
+address {
+    margin: 20px 0 50px 0;
+    font-style: normal;
+}
+
+.info,
+form {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #FFF;
+}
+
+
+.socmed {
+    display: inline-block;
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.socmed .fa {
+    line-height: 50px;
+}
+
+.socmed:hover {
+    background-color: #FFF;
+    color: #213B50;
+}
+
+input,
+textarea {
+    background-color: #2B4961;
+    display: block;
+    padding: 5px;
+    outline: 0;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 0;
+    color: #FFF;
+}
+
+input[type="submit"] {
+    background-color: #1AC056;
+    color: #FFF;
+    border: 1px solid;
+    text-align: center;
+    width: 20%;
+    float: right;
+    text-transform: uppercase;
+    line-height: 40px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    color: #1AC056;
+    background-color: #FFF;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #122836;
+    color: #FFF;
+    padding: 0 60px;
+}
+
+footer p {
+    margin: 0;
+}
+
+#mobile-menu,
+#respons {
+    display: none;
 }
